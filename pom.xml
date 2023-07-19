@@ -17,7 +17,7 @@
     </dependencies>
          <properties>
           <sonar.host.url>
-                 http://3.131.152.66:9000/
+                 http://18.224.7.0:9000/
           </sonar.host.url>
           <sonar.login>admin</sonar.login>
           <sonar.password>1234</sonar.password>
@@ -25,11 +25,11 @@
   <distributionManagement>
     <repository>
             <id>myapp</id>
-        <url>http://18.220.105.14:8081/repository/releaserepo/</url>
+        <url>http://18.116.98.208:8081/repository/releaserepo/</url>
     </repository>
     <snapshotRepository>
             <id>myapp</id>
-        <url>http://18.220.105.14:8081/repository/snaprepo/</url>
+        <url>http://18.116.98.208:8081/repository/snaprepo/</url>
     </snapshotRepository>
 </distributionManagement>
 
