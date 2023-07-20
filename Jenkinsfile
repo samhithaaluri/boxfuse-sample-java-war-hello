@@ -18,7 +18,7 @@ pipeline {
                     sh 'docker --version'
 
                     // Build the Docker image
-                    sh "docker build -t samhithaaluri/built_images:tomcat ."
+                    sh "docker build -t samhithaaluri/built_images:mvn ."
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
                     sh "docker login -u samhithaaluri -p Aluri@5157"
 
                     // Push the Docker image to Docker Hub
-                    sh "docker push samhithaaluri/built_images:tomcat"
+                    sh "docker push samhithaaluri/built_images:mvn"
                 }
             }
         }
