@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Ensure Docker is available
-                    sh 'sudo -S apt-get install docker.io'
+                    // sh 'sudo -S apt-get install docker.io'
                     sh 'docker --version'
 
                     // Build the Docker image
