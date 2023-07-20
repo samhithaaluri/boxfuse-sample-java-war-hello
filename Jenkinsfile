@@ -30,7 +30,7 @@ pipeline {
                     sh "docker login -u samhithaaluri -p Aluri@5157"
 
                     // Push the Docker image to Docker Hub
-                    sh "docker push tomcat:test"
+                    sh "docker push built_images/tomcat:test"
                 }
             }
         }
