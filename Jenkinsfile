@@ -10,11 +10,6 @@ pipeline {
                 sh 'mvn package'
             }
         }
-      stage('Install docker'){
-          steps{
-              
-          }
-      }
         stage('Build Docker Image') {
             steps {
                 script {
