@@ -13,8 +13,8 @@ pipeline {
             steps {
                 script {
                     
-                    // sh 'yum install docker.io'
-                    // sh 'docker --version'
+                    sh 'yum install docker.io'
+                    sh 'docker --version'
 
                     // Build the Docker image
                     sh "docker build -t tomcat:test ."
