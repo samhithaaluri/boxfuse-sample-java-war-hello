@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     
-                    sh 'yum install docker.io'
+                    // sh 'yum install docker.io'
                     sh 'docker --version'
 
                     // Build the Docker image
