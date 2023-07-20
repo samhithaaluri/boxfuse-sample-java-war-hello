@@ -12,7 +12,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    
+                    sh 'sudo -i'
                     sh 'apt-get install docker.io'
                     sh 'docker --version'
 
