@@ -14,7 +14,7 @@ pipeline {
                 script {
                     // Ensure Docker is available
                     // sh 'sudo -S apt-get install docker.io'
-                    sh 'docker --version'
+                    // sh 'docker --version'
 
                     // Build the Docker image
                     sh "docker build -t tomcat:test ."
