@@ -12,8 +12,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    // Ensure Docker is available
-                    // sh 'sudo -S apt-get install docker.io'
+                    
+                    // sh 'yum install docker.io'
                     // sh 'docker --version'
 
                     // Build the Docker image
