@@ -18,7 +18,7 @@ pipeline {
                     sh 'docker --version'
 
                     // Build the Docker image
-                    sh "docker build -t tomcat:test ."
+                    sh "docker build -t samhithaaluri/tomcat ."
                 }
             }
         }
