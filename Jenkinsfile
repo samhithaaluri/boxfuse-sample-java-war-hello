@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     // Login to Docker Hub
-                    sh "docker login -u samhithaaluri@gmail.com -p Aluri@5157"
+                    sh "docker login -u samhithaaluri -p Aluri@5157"
 
                     // Push the Docker image to Docker Hub
                     sh "docker push tomcat:test"
