@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'maven'
+        docker 'docker'
     }
   stages {
         stage('Build') {
@@ -9,11 +10,16 @@ pipeline {
                 sh 'mvn package'
             }
         }
+      stage('Install docker'){
+          steps{
+              
+          }
+      }
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'sudo -i'
-                    sh 'apt-get install docker.io'
+                    // sh 'sudo -i'
+                    // sh 'apt-get install docker.io'
                     sh 'docker --version'
 
                     // Build the Docker image
