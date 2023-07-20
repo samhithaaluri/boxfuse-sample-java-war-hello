@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    tools {
+    /*tools {
         dockerTool 'docker'
-    }
+    }*/
     stages {
         stage('Build Docker Image') {
             steps {
