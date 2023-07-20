@@ -1,3 +1,3 @@
 FROM tomcat:latest
-COPY /target/*.war usr/local/tomcat/webapps/Hello.war
+COPY /var/lib/jenkins/workspace/war_deploy/target/*.war usr/local/tomcat/webapps/Hello.war
 EXPOSE 8080
