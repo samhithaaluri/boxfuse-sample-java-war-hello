@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             
-            image 'mvntest:latest'
+            image 'mvntest'
 			
         }
     }
